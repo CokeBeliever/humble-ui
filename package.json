@@ -1,14 +1,22 @@
 {
   "private": true,
   "packageManager": "pnpm@7.3.0",
+  "scripts": {
+    "prepare": "husky install"
+  },
   "peerDependencies": {
     "vue": "^3.2.0"
   },
   "dependencies": {},
   "devDependencies": {
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
   },
   "engines": {
     "node": ">= 16"
+  },
+  "lint-staged": {
+    "*.{js,ts,json}": "prettier --write"
   }
 }
