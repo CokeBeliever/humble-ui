@@ -81,6 +81,12 @@
       }
     },
     {
+      "files": ["*.js"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off"
+      }
+    },
+    {
       "files": ["*.vue"],
       "parser": "vue-eslint-parser",
       "parserOptions": {
