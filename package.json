@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
+    "@pnpm/types": "^8.4.0",
     "@types/node": "*",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
     "@typescript-eslint/parser": "^5.44.0",
