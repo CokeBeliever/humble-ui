@@ -1,0 +1,9 @@
+{
+  "name": "@humble-ui/components",
+  "version": "0.0.1",
+  "description": "all components are settled here",
+  "main": "index.ts",
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  }
+}

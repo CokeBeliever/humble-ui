@@ -1,0 +1,27 @@
+{
+  "name": "humble-ui",
+  "version": "1.0.0-alpha.1",
+  "description": "A Vue 3 UI Library",
+  "keywords": [
+    "humble-ui",
+    "Humble UI",
+    "typescript",
+    "vue",
+    "vue-components",
+    "component-library",
+    "vue3"
+  ],
+  "homepage": "https://github.com/CokeBeliever/humble-ui",
+  "bugs": {
+    "url": "https://github.com/CokeBeliever/humble-ui/issues"
+  },
+  "license": "MIT",
+  "author": "CokeBeliever",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CokeBeliever/humble-ui.git"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  }
+}
