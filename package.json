@@ -6,7 +6,9 @@
     "docs:dev": "pnpm run -C docs dev",
     "docs:build": "pnpm run -C docs build",
     "docs:serve": "pnpm run -C docs serve",
-    "prepare": "husky install"
+    "stub": "pnpm run -r --parallel stub",
+    "prepare": "husky install",
+    "postinstall": "pnpm stub"
   },
   "peerDependencies": {
     "vue": "^3.2.0"
