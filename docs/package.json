@@ -2,8 +2,9 @@
   "name": "@humble-ui/docs",
   "private": true,
   "scripts": {
-    "dev": "vitepress dev .",
+    "dev": "pnpm gen-locale && vitepress dev .",
     "build": "NODE_ENV=production vitepress build .",
+    "gen-locale": "rimraf .vitepress/i18n && tsx .vitepress/build/crowdin-generate.ts",
     "serve": "NODE_ENV=production vitepress serve . --port 5001"
   },
   "devDependencies": {

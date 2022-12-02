@@ -5,7 +5,7 @@ export const config: UserConfig = {
   description: 'A Vue 3 UI Library',
   base: '/humble-ui',
   lastUpdated: true,
-  themeConfig: {}
+  themeConfig: {},
 }
 
 export default config

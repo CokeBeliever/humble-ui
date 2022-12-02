@@ -1,0 +1,11 @@
+{
+  "basic": {
+    "text": "Basic",
+    "children": [
+      {
+        "link": "/button",
+        "text": "Button"
+      }
+    ]
+  }
+}
