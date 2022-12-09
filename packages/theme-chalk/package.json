@@ -1,0 +1,7 @@
+{
+  "name": "@humble-ui/theme-chalk",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Humble UI component chalk theme.",
+  "license": "MIT"
+}
