@@ -3,12 +3,13 @@
 > :warning:注意！
 >
 > * namespace: hu
+> * 当 {type} 为 default 时，在实现中 CSS 变量名不会拼接 {type}。
 
 --{namespace}-color-while: #ffffff
 
 --{namespace}-color-black: #000000
 
-### Colors - 颜色
+### colors - 颜色
 
 * primary: #409eff
 * success: #67c23a
@@ -17,11 +18,11 @@
 * error: #f56c6c
 * info: #909399
 
---{namespace}-color-{type}-rgb: {value}
+--{namespace}-color-{type}-rgb: {red(value), green(value), blue(value)}
 
 
 
-### Typography - 字体排版
+### typography - 字体排版
 
 #### font-size - 字体大小
 
@@ -81,7 +82,7 @@
 
 
 
-### Transition - 过渡
+### transition - 过渡
 
 #### transition-duration - 过渡持续时间
 
@@ -123,4 +124,148 @@
 * small: 24px
 
 --{namespace}-component-size-{type}: {value}
+
+
+
+## Light CSS var - 明亮 CSS 变量
+
+--{namespace}-color-while: #ffffff
+
+--{namespace}-color-black: #000000
+
+### color - 颜色
+
+* primary: #409eff
+* success: #67c23a
+* warning: #e6a23c
+* danger: #f56c6c
+* error: #f56c6c
+* info: #909399
+
+--{namespace}-color-{type}: {value}
+
+--{namespace}-color-{type}-light-[3,5,7,8,9]: ...
+
+--{namespace}-color-{type}-dark-2: ...
+
+
+
+#### bg-color - 背景颜色
+
+* default: #ffffff
+* page: #f2f3f5
+* overlay: #ffffff
+
+--{namespace}-bg-color-{type}: {value}
+
+
+
+#### text-color - 文本颜色
+
+* primary: #303133
+* regular: #606266
+* secondary: #909399
+* placeholder: #a8abb2
+* disabled: #c0c4cc
+
+--{namespace}-text-color-{type}: {value}
+
+
+
+#### border-color - 边框颜色
+
+* default: #dcdfe6
+* light: #e4e7ed
+* lighter: #ebeef5
+* extra-light: #f2f6fc
+* dark: #d4d7de
+* darker: #cdd0d6
+
+--{namespace}-border-color-{type}: {value}
+
+
+
+#### fill-color - 填充颜色
+
+* default: #f0f2f5
+* light: #f5f7fa
+* lighter: #fafafa
+* extra-light: #fafcff
+* dark: #ebedf0
+* darker: #e6e8eb
+* blank: #ffffff
+
+--{namespace}-fill-color-{type}: {value}
+
+
+
+### box-shadow - 盒子阴影
+
+* default: 0px 12px 32px 4px rgba(0, 0, 0, 0.04), 0px 8px 20px rgba(0, 0, 0, 0.08)
+* light: 0px 0px 12px rgba(0, 0, 0, 0.12)
+* lighter: 0px 0px 6px rgba(0, 0, 0, 0.12)
+* dark: 0px 16px 48px 16px rgba(0, 0, 0, 0.08), 0px 12px 32px rgba(0, 0, 0, 0.12), 0px 8px 16px -8px rgba(0, 0, 0, 0.16)
+
+--{namespace}-box-shadow-{type}: {value}
+
+
+
+### disable - 禁用
+
+* bg-color: var(--{namespace}-fill-color-light)
+* text-color: var(--{namespace}-text-color-placeholder)
+* border-color: var(--{namespace}-border-color-light)
+
+--{namespace}-disabled-{type}: {value}
+
+
+
+### overlay-color - 覆盖颜色
+
+* default: rgba(0, 0, 0, 0.8)
+* light: rgba(0, 0, 0, 0.7)
+* lighter: rgba(0, 0, 0, 0.5)
+
+--{namespace}-overlay-color-{type}: {value}
+
+
+
+### mask-color - 掩饰颜色
+
+* default: rgba(255, 255, 255, 0.9)
+* extra-light: rgba(255, 255, 255, 0.3)
+
+--{namespace}-mask-color-{type}: {value}
+
+
+
+### border - 边框
+
+#### border-width - 边框宽度
+
+--{namespace}-border-width: 1px
+
+
+
+#### border-style - 边框样式
+
+--{namespace}-border-style: solid
+
+
+
+#### border-color-hover - 边框颜色悬停
+
+--{namespace}-border-color-hover: var('--{namespace}-text-color-disabled')
+
+
+
+#### border - 边框
+
+--{namespace}-border: var(--{namespace}-border-width) var(--{namespace}-border-style) var(--{namespace}-border-color-default)
+
+
+
+### svg
+
+--{namespace}-svg-monochrome-grey: var(--{namespace}-border-color-default)
 
