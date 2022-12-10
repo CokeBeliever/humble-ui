@@ -1,0 +1,29 @@
+@use 'sass:map';
+
+// CSS3 var
+@use '../common/var.scss' as common;
+@use './var' as *;
+@use '../mixins/_var.scss' as *;
+
+html.dark {
+  color-scheme: dark;
+
+  // hex colors
+  @each $type in common.$types {
+    @include set-css-color-type($colors, $type);
+  }
+
+  // --hu-box-shadow-#{$type}
+  @include set-component-css-var('box-shadow', $box-shadow);
+
+  // color-scheme
+  // Background --hu-bg-color-#{$type}
+  @include set-component-css-var('bg-color', $bg-color);
+  // --hu-text-color-#{$type}
+  @include set-component-css-var('text-color', $text-color);
+  // --hu-border-color-#{$type}
+  @include set-component-css-var('border-color', $border-color);
+  // Fill --hu-fill-color-#{$type}
+  @include set-component-css-var('fill-color', $fill-color);
+  @include set-component-css-var('mask-color', $mask-color);
+}

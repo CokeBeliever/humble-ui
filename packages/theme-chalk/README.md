@@ -269,3 +269,97 @@
 
 --{namespace}-svg-monochrome-grey: var(--{namespace}-border-color-default)
 
+
+
+## Dark CSS var - 黑暗 CSS 变量
+
+### color - 颜色
+
+* primary: #409eff
+* success: #67c23a
+* warning: #e6a23c
+* danger: #f56c6c
+* error: #f56c6c
+* info: #909399
+
+--{namespace}-color-{type}: {value}
+
+--{namespace}-color-{type}-light-[3,5,7,8,9]: ...
+
+--{namespace}-color-{type}-dark-2: ...
+
+
+
+#### bg-color 背景颜色
+
+* default: #141414
+* page: #0a0a0a
+* overlay: #1d1e1f
+
+--{namespace}-bg-color-{type}: {value}
+
+
+
+#### text-color - 文本颜色
+
+$text-color-base: #f0f5ff;
+
+* primary: rgba($text-color-base, 0.95)
+* regular: rgba($text-color-base, 0.85)
+* secondary: rgba($text-color-base, 0.65)
+* placeholder: rgba($text-color-base, 0.55)
+* disabled: rgba($text-color-base, 0.4)
+
+--{namespace}-text-color-{type}: {value}
+
+
+
+#### border-color - 边框颜色
+
+$border-color-base: #f5f8ff;
+
+* default: rgba($border-color-base, 0.25)
+* light: rgba($border-color-base, 0.2)
+* lighter: rgba($border-color-base, 0.15)
+* extra-light: rgba($border-color-base, 0.1)
+* dark: rgba($border-color-base, 0.3)
+* darker: rgba($border-color-base, 0.35)
+
+--{namespace}-border-color-{type}: {value}
+
+
+
+#### fill-color - 填充颜色
+
+$fill-color-base: #fafcff;
+
+* default: rgba($fill-color-base, 0.12)
+* light: rgba($fill-color-base, 0.08)
+* lighter: rgba($fill-color-base, 0.04)
+* extra-light: rgba($fill-color-base, 0.02)
+* dark: rgba($fill-color-base, 0.16)
+* darker: rgba($fill-color-base, 0.2)
+* blank: transparent
+
+--{namespace}-fill-color-{type}: {value}
+
+
+
+### box-shadow - 盒子阴影
+
+* default:  0px 12px 32px 4px rgba(0, 0, 0, 0.36), 0px 8px 20px rgba(0, 0, 0, 0.72)
+* light: 0px 0px 12px rgba(0, 0, 0, 0.72)
+* lighter: 0px 0px 6px rgba(0, 0, 0, 0.72)
+* dark: 0px 16px 48px 16px rgba(0, 0, 0, 0.72), 0px 12px 32px #000000, 0px 8px 16px -8px #000000
+
+--{namespace}-box-shadow-{type}: {value}
+
+
+
+### mask-color - 掩饰颜色
+
+* default: rgba(0, 0, 0, 0.8)
+* extra-light: rgba(0, 0, 0, 0.3)
+
+--{namespace}-mask-color-{type}: {value}
+
