@@ -7,7 +7,19 @@
     "gen-locale": "rimraf .vitepress/i18n && tsx .vitepress/build/crowdin-generate.ts",
     "serve": "NODE_ENV=production vitepress serve . --port 5001"
   },
+  "dependencies": {
+    "@vueuse/core": "^9.1.0",
+    "normalize.css": "^8.0.1",
+    "nprogress": "^0.2.0",
+    "prism-theme-vars": "^0.2.3"
+  },
   "devDependencies": {
+    "@humble-ui/theme-chalk": "workspace:*",
+    "@iconify-json/ri": "^1.1.3",
+    "unocss": "^0.33.5",
+    "unplugin-icons": "^0.14.6",
+    "unplugin-vue-components": "^0.20.1",
+    "vite": "^2.9.15",
     "vitepress": "^0.22.4"
   }
 }

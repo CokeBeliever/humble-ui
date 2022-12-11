@@ -2,7 +2,7 @@ import consola from 'consola'
 import { REPO_BRANCH, REPO_PATH } from '@humble-ui/build-constants'
 import { docsDirName } from '@humble-ui/build-utils'
 import { languages } from './utils/lang'
-import { sidebars } from './configs'
+import { nav, sidebars } from './configs'
 import type { UserConfig } from 'vitepress'
 
 consola.debug(`DOC_ENV: ${process.env.DOC_ENV}`)
@@ -29,6 +29,7 @@ export const config: UserConfig = {
     lastUpdated: 'Last Updated',
 
     sidebars,
+    nav,
     langs: languages,
   },
 
