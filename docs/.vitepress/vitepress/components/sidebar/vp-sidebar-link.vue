@@ -24,7 +24,6 @@ const route = useRoute()
     @click="$emit('close')"
   >
     <p class="link-text">{{ item.text }}</p>
-    <VersionTag v-if="item.promotion" class="ml-2" :version="item.promotion" />
   </a>
 </template>
 
