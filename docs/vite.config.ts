@@ -1,6 +1,8 @@
 import path from 'path'
 import { defineConfig, loadEnv } from 'vite'
+import VueMacros from 'unplugin-vue-macros/vite'
 import UnoCSS from 'unocss/vite'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 import Components from 'unplugin-vue-components/vite'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
@@ -42,6 +44,14 @@ export default defineConfig(async ({ mode }) => {
       alias,
     },
     plugins: [
+      VueMacros({
+        setupComponent: false,
+        setupSFC: false,
+        plugins: {
+          vueJsx: vueJsx(),
+        },
+      }),
+
       // https://github.com/antfu/unplugin-vue-components
       Components({
         dirs: ['.vitepress/vitepress/components'],

@@ -9,3 +9,4 @@ Commonly used button.
 
 ## Basic usage
 
+<hu-button/>
