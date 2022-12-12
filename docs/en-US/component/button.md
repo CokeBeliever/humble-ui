@@ -9,4 +9,8 @@ Commonly used button.
 
 ## Basic usage
 
-<hu-button/>
+:::demo Define Button.
+
+button/basic
+
+:::

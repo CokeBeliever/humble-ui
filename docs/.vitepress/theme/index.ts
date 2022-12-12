@@ -1,5 +1,5 @@
 import HumbleUI from 'humble-ui'
-import VPApp, { NotFound } from '../vitepress'
+import VPApp, { NotFound, globals } from '../vitepress'
 import { define } from '../utils/types'
 
 import './style.css'
@@ -11,5 +11,9 @@ export default define<Theme>({
   Layout: VPApp,
   enhanceApp: ({ app }) => {
     app.use(HumbleUI)
+
+    globals.forEach(([name, Comp]) => {
+      app.component(name, Comp)
+    })
   },
 })
