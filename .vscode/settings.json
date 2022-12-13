@@ -25,5 +25,11 @@
     "markdown",
     "json",
     "jsonc"
-  ]
+  ],
+  "[json]": {
+    "editor.formatOnSave": false
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": false
+  }
 }
