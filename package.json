@@ -4,6 +4,9 @@
   "scripts": {
     "cz": "czg",
     "gen:version": "tsx scripts/gen-version.ts",
+    "clean": "pnpm run clean:dist && pnpm run -r --parallel clean",
+    "clean:dist": "rimraf dist",
+    "build:theme": "pnpm run -C packages/theme-chalk build",
     "docs:dev": "pnpm run -C docs dev",
     "docs:build": "pnpm run -C docs build",
     "docs:serve": "pnpm run -C docs serve",
