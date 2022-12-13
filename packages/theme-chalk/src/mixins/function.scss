@@ -69,7 +69,7 @@
   @return var(#{joinVarName($args)}, #{$default});
 }
 
-// bem('block', 'element', 'modifier') => 'el-block__element--modifier'
+// bem('block', 'element', 'modifier') => 'hu-block__element--modifier'
 @function bem($block, $element: '', $modifier: '') {
   $name: config.$namespace + config.$common-separator + $block;
 
